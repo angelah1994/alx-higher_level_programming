@@ -12,4 +12,4 @@ elif number < 0:
     elif last_digit == 0:
         result = 'Last digit of {0} is {1} and is 0'
 
-print(result.format(number, last_digit))
+    print(result.format(number, last_digit))
