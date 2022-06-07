@@ -1,8 +1,5 @@
-#1/usr/bin/python3
-def no_c(my_string):
-    new_str = ''
-    for i in my_string:
-        if i != 'C' and i != 'c':
-            new_str += i
+#!/usr/bin/python3
 
-    return new_str
+def no_c(my_string):
+    output = my_string.translate({ord(i): None for i in 'cC'})
+    return output
